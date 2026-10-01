@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Web Cá Nhân</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header/Menu -->
+    <header>
+        <h1>MyPortfolio</h1>
+        <button class="hamburger" id="hamburger-btn">☰</button>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="#about" class="smooth-link">Giới thiệu</a></li>
+            <li><a href="#skills" class="smooth-link">Kỹ năng</a></li>
+            <li><a href="#projects" class="smooth-link">Dự án</a></li>
+            <li><a href="#contact" class="smooth-link">Liên hệ</a></li>
+        </ul>
+        <button class="theme-btn" id="theme-btn">Màn Tối</button>
+    </header>
+
+    <!-- Phần giới thiệu -->
+    <section id="about" class="reveal">
+        <h2>Giới thiệu bản thân</h2>
+        <p class="about-text">Xin chào! Tôi là một nhà phát triển Web đam mê với việc tạo ra các sản phẩm công nghệ đẹp
+            mắt và hữu ích. Tôi luôn nỗ lực học hỏi để hoàn thiện bản thân mỗi ngày.</p>
+    </section>
+
+    <!-- Danh sách kỹ năng -->
+    <section id="skills" class="reveal">
+        <h2>Kỹ năng của tôi</h2>
+        <div class="skills-list">
+            <span class="skill-item">HTML5</span>
+            <span class="skill-item">CSS3 (Flexbox/Grid)</span>
+            <span class="skill-item">JavaScript</span>
+            <span class="skill-item">Responsive Design</span>
+        </div>
+    </section>
+
+    <!-- Danh sách dự án -->
+    <section id="projects" class="reveal">
+        <h2>Dự án tiêu biểu</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <h3>Dự án 1: To-Do App</h3>
+                <p>Ứng dụng quản lý công việc hàng ngày sử dụng HTML, CSS và JavaScript thuần.</p>
+            </div>
+            <div class="project-card">
+                <h3>Dự án 2: Thời Tiết</h3>
+                <p>Website hiển thị thời tiết theo thời gian thực sử dụng API thời tiết.</p>
+            </div>
+            <div class="project-card">
+                <h3>Dự án 3: Web Bán Hàng</h3>
+                <p>Giao diện trang web thương mại điện tử với tính năng giỏ hàng.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Form liên hệ -->
+    <section id="contact" class="reveal">
+        <h2>Liên hệ với tôi</h2>
+        <form>
+            <input type="text" placeholder="Tên của bạn" required>
+            <input type="email" placeholder="Email của bạn" required>
+            <textarea rows="5" placeholder="Tin nhắn..." required></textarea>
+            <button type="submit">Gửi Tin Nhắn</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>Bản quyền &copy; <span id="current-year"></span> bởi Thái.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
